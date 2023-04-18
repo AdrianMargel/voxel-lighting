@@ -1,0 +1,99 @@
+html{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #28282E;
+	color: white;
+}
+::selection {
+	background: #97F28060;
+}
+
+#c {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+}
+input:focus + .focused{
+	padding: 4px;
+	border-right: 2px solid #525259;
+	border-bottom: 2px solid #525259;
+	position: absolute;
+	top: calc(50% - 6px);
+	left: -18px;
+	transform: rotate(-45deg);
+}
+.link:hover{
+	text-decoration: underline;
+}
+.centered{
+	text-align: center;
+}
+button{
+	border-radius: 8px;
+	border-bottom-right-radius: 0;
+	border-top-left-radius: 0;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+	padding: 5px 10px;
+}
+button:focus{
+	outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+p{
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.control{
+	color: white;
+	position: absolute;
+	height: 200px;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 8px;
+	border: 2px solid #606060;
+	display: flex;
+	justify-content: flex-start;
+	width: calc(100% - 40px);
+}
+
+.imageUpload #uploaded{
+	max-height: 200px;
+}
+.imageUpload #uploader{
+	position: absolute;
+}
+#mode{
+	width: 80px;
+	margin-right: 10px;
+	background-color: #202020;
+	border: 1px solid #606060;
+	color: white;
+	border-radius: 8px;
+}
+
+#toggle{
+	position: absolute;
+	z-index: 10;
+	right: 20px;
+	top: 20px;
+	background-color: #606060;
+	width: 20px;
+	height: 20px;
+}
